@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bob's Breakfast</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="title">
+        <div class="text">
+            <h1>Bob's Breakfast</h1>
+        </div>
+    </div>
+    
+    <div class="header">
+        
+        
+        <div class="navbar">
+                <div  class="nav">
+                    <button class="home"><a href="./Homepage.html">Home</a> </button>
+                    <button class="menu"><a href="./menu.html"> Menu</a> </button>
+                    <button class="order sel"> My Order </button>
+                    <button class="contact"><a href="./contact.html"> Contact</a></button>
+                    <button class="info"><a href="./aboutUs.html">About Us</a></button>
+                    
+                </div>
+                
+        </div>
+        
+    </div>
+    <div class="main">
+        <h1 class="head"> Order</h1>
+        <h1> Your Order:</h1>
+        <div >
+            <table class="ordered" >
+                <tr>
+                    <th class="quant"><h3>Quantity</h3></th>
+                    <th class="mid"><h3>Item Name</h3></th>
+                    <th ><h3>Price</h3></th>
+                    <th class="rem"><h3>Remove?</h3></th>
+                </tr>
+                <tr class="bod">
+                    <td class="quant"><h3>1x</h3></td>
+                    <td class="mid"><h3>Breakfast Set</h3>
+                        <ul>
+                            <li>Sourdough</li><br>
+                            <li>Bacon</li><br>
+                            <li>Omelette</li><br>
+                            <li>Wedges</li>
+                        </ul>
+                    </td>
+                    <td class="subp"><h3>6.50 USD</h3></td>
+                    <td class="rem"><h3><a href="./order.html" class="remove">Remove</a></h3></td>
+                </tr>
+                <tr class="bod">
+                    <td class="quant"><h3>1x</h3></td>
+                    <td class="mid" ><h3>Coffee</h3>
+                        <ul>
+                            <li>Mocha</li><br>
+                            <li>Iced</li><br>
+                        </ul>
+                    </td>
+                    <td class="subp"><h3>2.00 USD</h3></td>
+                    <td class="rem"><h3><a href="./order.html" class="remove">Remove</a></h3></td>
+                </tr>
+                <tr class="bod">
+                    <td class="quant"><h3>1x</h3></td>
+                    <td class="mid" ><h3>Tea</h3>
+                        <ul>
+                            <li>Chamomile</li><br>
+                            <li>Hot</li><br>
+                        </ul>
+                    </td>
+                    <td class="subp"><h3>2.00 USD</h3></td>
+                    <td class="rem"><h3><a href="./order.html" class="remove">Remove</a></h3></td>
+                </tr>
+                <tr class="bod">
+                    <td class="quant"><h3>1x</h3></td>
+                    <td class="mid" ><h3>Toast</h3>
+                        <ul>
+                            <li>Panini</li><br>
+                        </ul>
+                    </td>
+                    <td class="subp"><h3>1.00 USD</h3></td>
+                    <td class="rem"><h3><a href="./order.html" class="remove">Remove</a></h3></td>
+                </tr>
+                <tr class="total">
+                    <th colspan="3" style="text-align:right"><h3>Total:</h3></th>
+
+                    <th class="tp"><h3>11.50 USD</h3></th>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1> Checkout:</h1>
+        <a href="#dinein"><button type="button" value="Dine In">Dine In</button></a>
+        <a href="#delivery"><button type="button" value="Delivery">Delivery</button></a>
+        <a href="#takeaway"><button type="button" value="Takeaway">Takeaway</button></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="checkout">
+            <form class="drop2" id="takeaway" action="./Homepage.html">
+                <label for="ptime">Pick-up time:</label><br>
+                <input type="time"id="ptime" name="ptime" class="ptime required" min="07:30" max="10:30" required>
+                
+                    <label for="comment">Special Notes:</label><textarea rows="6" max="5000" id="comment" name="comment" class="comment"></textarea>
+                
+                <input type="submit" value="ORDER NOW!">k
+                
+            </table>
+            </form>
+            <form class="drop2" id="dinein" action="./Homepage.html">
+                <label for="tnumber">Table Number:</label>
+                <input type="text "id="tnumber" name="tnumber" class="tnumber required" required>
+                <label for="comment">Special Notes:</label><textarea rows="6" max="5000" id="comment" name="comment" class="comment"></textarea>
+                <input type="submit" value="ORDER NOW!">
+                
+            </form>
+            <form class="drop2" id="delivery" action="./Homepage.html">
+                <table>
+                    <tr>
+                        <td><label for="fname">First Name:</label><input type="text "id="fname" name="fname" class="fname" required></td>
+                        <td><label for="lname">Last Name:</label>                
+                            <input type="text "id="lname" name="lname" class="lname required" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="">Address:</label><input type="text "id="address" name="address" class="address required" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="phnumber">Phone Number:</label><input type="tel "id="phnumber" name="phnumber" class="phnumber required" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="email">E-mail:</label><input type="email "id="email" name="email" class="email required" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="comment">Special Notes:</label><textarea rows="6" max="5000" id="comment" name="comment" class="comment"></textarea></td>
+                    </tr>
+                </table>
+                
+                
+                <input type="submit" value="ORDER NOW!">
+            </form>
+        </div>
+    </div>
+    <br>
+        <br>
+        <br>
+        <br>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4><b>comapny</b></h4>
+                    <ul>
+                        <li><a href="./Homepage.html">Home</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./order.html">Order</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./aboutUs.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><b>opening hours</b></h4>
+                    <ul>
+                        <li>Mon-Fri: 7:00am - 10:30am</li>
+                        <li>Sat-Sun: 7:00am - 10:30am</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><b>address</b></h4>
+                    <ul>
+                        <li><a href="#">420 Grove Street, Los Santos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><b>follow us</b></h4>
+                    <div class="social-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    
+    <br>
+    <br>
+    <br>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"> </script>
+<script src="./menu.js">    </script>
+</html>
