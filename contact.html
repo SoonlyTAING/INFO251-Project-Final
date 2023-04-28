@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob's Breakfast</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="title">
+        <div class="text">
+            <h1>Bob's Breakfast</h1>
+        </div>
+    </div>
+    
+    <div class="header">
+        
+        
+        <div class="navbar">
+                <div  class="nav">
+                    <button class="home"><a href="./Homepage.html">Home</a> </button>
+                    <button class="menu"><a href="./menu.html">Menu</a> </button>
+                    <button class="order"><a href="./order.html"> My Order </a></button>
+                    <button class="contact sel">Contact</button>
+                    <button class="info"><a href="./aboutUs.html">About Us</a></button>
+                </div>
+        </div>
+    </div>
+    
+        <div class="main">
+              <h2>Contact</h2>
+              <p>Find us at some address at some place or call us at +855 98920295</p>
+              <p><span class="tag"></span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+        
+            <h2>Love to hear from you, get in tough👋🏻</h2>
+            
+            <form>
+            <label for="Firstname">First Name<br></label>
+            <input type="text" name="fname" id="fname"
+            placeholder="First Name"
+            required><br>
+            <label for="Lastname">Last Name<br></label>
+            <input type="text" name="lname" id="lname"
+            placeholder="Last Name"
+            required><br>
+            <label for="myEmail">E-mail<br></label>
+            <input type="email" name="myEmail" id="myEmail"
+            placeholder="E-mail Address"
+            required><br> 
+            <h3> Rate Your Experience with Our restaurant</h3>
+            
+ <!-- 5-star rating system with radio buttons-->
+        <div class="rating">
+            <input type="radio" name="rating" value="5" id="star5"><label for="star5">&#9733;</label>
+            <input type="radio" name="rating" value="4" id="star4"><label for="star4">&#9733;</label>
+            <input type="radio" name="rating" value="3" id="star3"><label for="star3">&#9733;</label>
+            <input type="radio" name="rating" value="2" id="star2"><label for="star2">&#9733;</label>
+            <input type="radio" name="rating" value="1" id="star1"><label for="star1">&#9733;</label>
+        </div><br>
+  
+ <!-- Feedback section with textarea -->
+            <label for="feedback">Your Feedback<br></label>
+            <textarea id="feedback" name="feedback" placeholder="Write something..." style="height:200px" required></textarea>
+ 
+ <!-- Display feedback section -->
+            <div id="feedback-container"></div>
+            <script src="contact.js"></script>
+
+            <input type="submit" onclick="submitRating()" value="Submit Rating"><input type="reset" value="Reset">   
+            
+            </form>
+        </div>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4><b>comapny</b></h4>
+                        <ul>
+                        <li><a href="./Homepage.html">Home</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./order.html">Order</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./aboutUs.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4><b>opening hours</b></h4>
+                        <ul>
+                            <li>Mon-Fri: 7:00am - 10:30am</li>
+                            <li>Sat-Sun: 7:00am - 10:30am</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4><b>address</b></h4>
+                        <ul>
+                            <li><a href="#">420 Grove Street, Los Santos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4><b>follow us</b></h4>
+                        <div class="social-links">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </footer>
+        
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+
+    
+    <br>
+    <br>
+    <br>
+</body>
+</html>
